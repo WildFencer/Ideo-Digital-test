@@ -1,0 +1,11 @@
+<div class="invoices">
+    <mat-list role="list">
+        <mat-list-item role="listitem" *ngFor="let item of invoiceService?.invoices" class="list-item">
+            <span>{{item?.id}}</span>
+            <span>{{item?.billingStatus}}</span>
+            <span>{{item?.createDate}}</span>
+            <button mat-fab matTooltip="Update" (click)="openUpdateInvoiceDialog($event)"></button>
+            <button mat-fab matTooltip="Delete" (click)="deleteInvoice($event.id)"></button>
+        </mat-list-item>
+    </mat-list>
+</div>

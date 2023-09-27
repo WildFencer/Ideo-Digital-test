@@ -1,0 +1,19 @@
+.header-card {
+    width: 85%;
+    margin-right: 15px;
+    background-color: rgba(0,0,0,.04);
+    text-align: center;
+
+    .new-invoice {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button {
+            background-color: chartreuse;
+            width: 50px;
+            margin: 0 10px;
+        }
+    }
+}
